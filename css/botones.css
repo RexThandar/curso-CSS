@@ -1,0 +1,50 @@
+body {
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    margin: 20px 0;
+}
+
+.btn {
+    background: #012a4a; /* Color de fondo */
+    color: #fff; /* color del contenido, principalmente texto */
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.btn:hover {
+    opacity: .5;
+}
+
+.p {
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.m {
+    font-size: 16px;
+    padding: 15px 20px;
+}
+
+.g {
+    font-size: 18px;
+    padding: 20px 25px;
+}
+
+.xg {
+    font-size: 20px;
+    padding: 25px 30px;
+}
+
+.rojo {background: #ae2012;}
+.verde {background: #55a630;}
+.cafe {background: #c44900;}
+.morado {background: #55286f;}
+
+.bordeXL {border-radius: 20px;}

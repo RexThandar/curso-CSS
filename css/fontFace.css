@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "FrederickatheGreat-Regular";
+    src: url('../fonts/FrederickatheGreat-Regular.ttf');
+    /* Si existen mas fuentes como italic o bold, se debe crear otro @font-face debajo de este, ya que es una fuenta completamente distinta */
+    /* Normalmente se coloca en un archivo separado llamado fuentes CSS */ 
+}
+
+body {
+    font-family: "FrederickatheGreat-Regular";
+}
+
+h1 {
+    font-family: 'DotGothic16', sans-serif; /* Esta cargando el Style del html */
+}

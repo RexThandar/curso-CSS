@@ -1,0 +1,11 @@
+/* el > hace que solo se aplica a los div/p y no a los div/article/etc/p*/
+div > p {
+    font-size: 20px;
+}
+
+/* Selector de atributos */
+input [type] { color:black }
+input [type="text"] { color:black }
+/* Se selecciona el atributo de las 2 formas antes */
+
+/* Herencia en CSS: al aplicar estilos al selector body, afecta a los elementos internos */

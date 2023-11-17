@@ -1,0 +1,36 @@
+@keyframes fromto {
+    from{background-color: #9eb3c2;}
+    to {background-color: #21295c;}
+}
+@keyframes porcent {
+    0% {background: #21295c;}
+    25% {background: #1c7293; width: 300px;}
+    50% {background: #065a82; width: 400px;}  
+    75% {background: #1b3b6f; width: 300px;}
+    100% {background: #21295c; width: 200px;}
+}
+@keyframes mov{
+    0% {transform: translate(0px);}
+    50% {transform: translate(500px);}
+    100% {transform: translate(0px);}
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: #9eb3c2;
+}
+
+.ani1 {
+    animation-name: fromto; /* Llama a Keyframe colores */
+    animation-duration: 5s; /* Determina cuanto dura la animacion */
+    animation-iteration-count: infinite; /* Hace loop en la animacion */
+}
+.ani2 {
+    animation-name: porcent;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.ani3 {
+    animation: mov 5s ease infinite;
+}

@@ -1,0 +1,76 @@
+/* Tipos de Posicionamiento:
+
+- Normal (static):      Posicionamiento por defecto con el que los navegadores acomodan los elementos
+- Relativo (relative):  Nos permite posicionar una caja y despues moverla desde su lugar original.
+    ╚═══════════════    puede tener variales top | right | left | bottom
+- Abosluto (absolute):  Nos permite posicionar una caja respecto a su contenedor y el resto de elementos ignoran la nueva posicion.
+    ╚═══════════════    puede tener variales top | right | left | bottom
+- Fijo (fixed):         Nos permite posicionar una caja en donde su posicion respecto a la pantalla del usuario siempre va a ser la misma.
+- Flotante (float):     Nos permite desplazar las cajas todo lo posible hacia la derecha o izquierda.
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background: #0e6ba8;
+    border: black solid 1px;
+    margin: 10px;
+    /* display: inline-block; */
+}
+
+.fija {
+    background: #0e6ba8;
+    position: fixed;
+    top: 0; /* Ordena la caja para dejarla a la altura de las otras */
+}
+
+.relativa {
+    background: red;
+    position: relative;
+    left: 400px;
+}
+
+.absoluta {
+    background: #0e6ba8;
+    position: absolute;
+    left: 600px;
+}
+
+.cajaPadre {
+    margin: 10px;
+    background: purple;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border: black solid 1px;
+}
+
+.cajaHijo {
+    background: #0e6ba8;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+.flotante {
+    float:right;
+}
+
+.flotantePadre{
+    margin: 10px;
+    background: purple;
+    width: 100% - 10px; /* Esto resta 10px al 100% del tamaño que lo bugeaba */
+    height: 500px;
+    position: relative;
+    border: black solid 1px;
+}

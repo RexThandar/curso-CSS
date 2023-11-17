@@ -1,0 +1,26 @@
+/* Explicacion
+text-shadow:    1er valor: Posicion horizontal
+                2do valor: Posicion vertical
+                3er valor: Mayor valor, mas difuminacion
+                4to valor: El color de la sombra
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.texto {
+    color: aliceblue;
+    text-shadow: 2px 3px 10px blue;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background: #f79256;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5); /* boxshadow es el sombreado para los bloques*/
+}
+
+
+/* Antiguamente se ultiizaba -webkit-box-shadow que era por la compatibilidad de navegadores pero ya no sirve*/

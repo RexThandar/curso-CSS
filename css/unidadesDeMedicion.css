@@ -1,0 +1,38 @@
+/*
+Unidades Relativas
+	px - pixel
+	em - Relativa al tamaño de fuente que tenga su elemento padre o el mas cercano
+	rem - Relativa al tamaño de fuente especificado en el body.
+	% - porcentaje
+	vh - Usa el tamaño de la pantalla en alto
+	vw - Usa el tamaño de la pantalla en ancho
+
+Unidades Abosultas
+	Estas medidas nunca las vas a usar en el diseño web, pero aqui estan para que las conozcas
+	in - inches (pulgadas)
+	cm - centimetros
+	mm - milimetros
+*/
+
+html, body {
+	font-size:20px;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+.contenedor_padre {
+	font-size:25px;
+}
+
+.hijo {
+    /* font-size: 1em; */
+	background:#000;
+    color: #fff;
+	width: 10rem;
+	height: 10rem;
+}
+
+/* el em toma el tamaño del contenedor cercano o padre, mientras que el rem toma las medidas del body*/
+/* Si no toma el valor del body, esta tomando el font-size predefinido del html que es 16px */

@@ -1,0 +1,45 @@
+/* Valores que podemos usar en las propiedades
+background: repeat | no-repeat | repeat-x | repeat-y;
+    repeat: por defecto repite la imagen
+    no-repeat: no repite la imagen
+    repeat-x: Repite Horintalmente
+    repeat-y: Repite Verticalmente
+background-size: auto | 100px 100px | 100% 100% | cover | contain;
+	auto: Valor por defecto, el ancho y alto de la imagen.
+	ancho y alto: Ancho y alto que nosotros le especifiquemos, si solo ponemos el primer valor, el segundo sera automatico.
+	porcentaje:  Porcentaje del ancho y alto que tendra el fondo tomando en cuenta el contenedor padre.
+	cover: Ajusta el ANCHO de la imagen para que avarque el ancho del contenedor padre.
+	contain: Ajusta la imagen para que avarque el ancho y alto del contenedor padre.
+
+background-attachment: scroll | fixed ;
+    scroll: El fondo se movera al scrollear
+    fixed: El fondo quedara fijo, de tal forma, que no scrollea
+    ╚══ background-position: 100px 100px | center center
+        px: margen de izquierda a derecha, margen de arriba a abajo
+        center: centra horizontal y/o verticalmente
+    */
+
+body {
+    /* Color de fondo 
+    background: green; */
+    background: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+    /* Se puede hacer lo mismo que antes pero requiere tamaño*/
+    /* background: url('../img/fondo.jpg') no-repeat fixed center center;
+    background-size: 500px; */
+}
+
+.fondo {
+    /* Esto es un div!*/
+    width: 600px;
+    height: 600px;
+    background: url('../img/fondo.jpg') #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border: 10px solid red;
+}

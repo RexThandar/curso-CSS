@@ -1,0 +1,35 @@
+/* Explicacion
+text-decoration
+    none: quita los subrayados
+    underline: es el que viene por defecto, subrayado
+    line-through: tacha el texto
+*/
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Coloca propiedades al momento de posicionar el puntero encima */
+a:hover {
+    background-color: #f9a03f;
+    color: #fff;
+}
+
+/* Coloca propiedades a los link que NO HAN sido visitados */
+a:link {
+    text-decoration: none;
+    color: green;
+}
+
+/* Coloca propiedades a los link que HAN sido visitados */
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* Cuando se clickea, genera el cambio del css a todo el a: */
+a:active{
+    text-decoration: underline;
+    background-color: black;
+}

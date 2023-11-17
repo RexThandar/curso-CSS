@@ -1,0 +1,28 @@
+/* Selector universal */
+* {color: black}
+
+/* Selector de etiqueta */
+h1, h2, h3, h4, h5, h6 { color: blue; }
+
+/* Selector Descendente 
+(Solo los parrafos que estan dentro de un div sin importar 
+que etiqueta haya entre medio de ambos)*/
+div p { font-size: 20px; }
+div p a { color:red;}
+
+/* Selector para clases (no usar ids por que actualidad) */
+.grande {
+    font-size: 28px;
+}
+
+/* Selector para id (no usar ids por que actualidad) */
+#rojo {
+    color: red;
+}
+
+/* combinacion de Selector */
+.main div p {
+    color: black;
+}
+
+

@@ -1,0 +1,38 @@
+/* Explicaciones
+transform:  puede Trasladar, Escalar, Rotar Sesgar elementos
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.a1 {
+    background: #ffaa5a;
+    transform: translate(200px, 50px); /* Como el position pero esto se usa para las animaciones */
+}
+.a2 {
+    background: rgb(37, 37, 134);
+    transform: translateY(300px); /* Como el position pero esto se usa para las animaciones */
+}
+.a3 {
+    background: rgb(184, 27, 27);
+    transform: scale(1.2,1.2); /* Ancho, Alto */
+}
+.a4 {
+    background: rgb(18, 240, 18);
+    transform: rotate(30deg);
+}
+.a5 {
+    background: rgb(122, 0, 112);
+    transform: skew(20deg,0deg);
+}
+.todo {
+    background: rgb(5, 56, 0);
+    transform: skew(20deg,0deg) scale(1.2,1.2) rotate(30deg) translateY(300px);
+}

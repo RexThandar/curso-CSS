@@ -1,0 +1,37 @@
+/* Algunos elementos "inline" abarcan desde donde termina el texto o caracter
+    a, span, img, b, i, small, cite, code,
+    em, strong, br, script, button, 
+    input, label, select, textarea.
+*/
+
+/* Algunos elementos "block" abarcan el 100% del espacio disponible por margin o padding
+	div, article, section, header
+	footer, aside, table, p, video,
+	ul, ol, h1, h2, h3, h4, h5, h6
+*/
+
+/* Explicacion 
+display: inline-block (Mantiene el elemento en una linea pero con propiedas de block)
+
+*/
+
+body {
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, p, div {
+    background: #ccc;
+    display: inline-block;
+}
+
+a{
+    color: #fff;
+    background: #000;
+
+    display: inline-block;
+    padding: 10px; 
+    height: 50px;
+}
+
+/* Si solo tiene inline, el padding, width, etc, no funcionara*/

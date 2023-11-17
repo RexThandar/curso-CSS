@@ -1,0 +1,71 @@
+/* Explicacion
+box-sizing: border-box  Colocara en los elementos de abajo, los 200px como maximo, y alli incluye los 20px del padding, no lo suma 
+*/
+
+* { /* Los form llenan mucho de esto */ 
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario {
+    background: #fff; 
+    width: 500px;
+    /* margin: 20px auto; */ /* Esta propiedad de 0px auto, hace que el contenido se centre */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formulario input {
+    display: block;
+}
+.formulario input[type="text"], /* No debe tener espacios entre el input y [ */
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #226fc1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.formulario textarea { 
+    min-height: 120px; /* Otorga maxima altura*/
+    max-height: 300px; /* Otorga minima altura */
+    min-width: 100%; /* Imposibilita disminuir ancho */
+    max-width: 100%; /* Imposibilita aumentar ancho */
+}
+
+.formulario input[type="text"]:focus, /* No debe tener espacios entre el input y [ */
+.formulario input[type="email"]:focus,
+.formulario textarea:focus {
+    border: 3px solid #4fb560;
+    outline: none; /* Quita el borde que se coloca en algunos navegadores, tomar en cuenta que solo aparece con el focus */
+}
+
+.formulario input[type="submit"] {
+    width: 200px;
+    margin: 0 auto;
+    background: none;
+    border: 1px solid #4fb560;
+    color: #4fb560;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.formulario input[type="submit"]:hover{
+    background: #4fb560;
+    color: #fff;
+}

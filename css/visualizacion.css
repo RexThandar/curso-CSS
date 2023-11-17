@@ -1,0 +1,66 @@
+/* Explicacion
+display         [inline | block | none | inline-block | flex]
+    ╚══════════ none: hace desaparecer todo el elemento que posee la clase inclsuo su espacio
+visibility      hidden: hace desaparecer todo el elemento pero consume el espacio que utiliza 
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+a {
+    display: inline-block;
+    background-color: #246eb9;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+}
+
+.caja {
+    color: #fff;
+    background: #4fb560;
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;      /* Establece un alto maximo */
+    /* overflow: hidden;   Oculta el contenido sobrante en base al alto del div*/
+    overflow: auto;   /* Coloca la barra de desplazamiento acorde al tamaño del div*/
+}
+
+.contenedor {
+    width: 600px;
+    background-color: #ccc;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.izq {
+    float: left;
+}
+
+.der {
+    float: right;
+}
+
+.contenedor2 .caja {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.azul {
+    background-color: #009ddc;
+    z-index: 10;    /* pone el azul sobre el gris*/
+}
+
+.gris {
+    background-color: grey;
+    left: 50px;
+    bottom: 50px;
+    z-index: 9;
+}

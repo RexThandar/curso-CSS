@@ -1,0 +1,29 @@
+/* Explicaciones 
+font-style: italic | normal
+font-weight: bold | normal | 500
+text-transform: uppercase | lowercase | capitalize
+letter-spacing: 10px : espaciado entre letras
+line-height: 25px : interlineado
+
+*/
+
+p {
+    /* Se colocan varias por que las carga en orden, si la primera no carga */
+    /* cuando llevan espacio, deben ir entre "" o '' */
+    font-family: 'Times New Roman', Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 25px;
+    /* Si quiero agregar una fuente personalizada deberia agregarla entre "" o desde googlefont */
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style:italic;
+    font-weight:bold;
+    color: chartreuse; /* color de la fuente */
+    text-align: center;
+    text-decoration: underline; /* line-through*/
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
